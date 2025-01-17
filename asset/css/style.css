@@ -19,7 +19,7 @@ body {
 
 /*Header*/
 header {
-    background-color: #44af52;
+    background-color: rgb(173, 211, 177);
     color: #0d0030;
     padding: 10px 0;
     text-align: center;
@@ -27,10 +27,10 @@ header {
 
 header a {
     text-decoration: none;
-    color: black;
+    color: rgb(250, 249, 249);
 }
 header h1 {
-    color: black;
+    color: rgb(252, 249, 249);
     padding: 10px 0;
     text-align: center;
 }
@@ -56,7 +56,8 @@ header h1 {
 
 /* Main Quiz Container */
 .Quiz {
-    background: rgb(236, 220, 220);
+    /*background: rgb(203 221 205);*/
+    border: 1px solid #004700;
     width: 100%;
     max-width: 700px;
     margin: 100px auto 0;
@@ -76,6 +77,7 @@ header h1 {
 }
 
 .question {
+   
     padding: 20px 0;
 }
 
@@ -91,17 +93,19 @@ header h1 {
     font-weight: 500;
     font-size: 2em;
     width: 100%;
-    border: 1px solid #0b053f;
+    /*border: 1px solid #0b053f;*/
     padding: 15px;
     margin: 10px 0;
     text-align: left;
     border-radius: 6px;
     cursor: pointer;
     font-size: 18px;
+    outline: none;
+    border: none;
 }
 
 .choice:hover {
-    background: #7b34ff;
+    background: rgb(173, 211, 177);
     color: #f5f1f1;
 }
 
@@ -116,7 +120,13 @@ header h1 {
     font-weight: bold;
     font-size: 2em;
 }
+
 /* Basic Next button style */
+.next-button-container {
+    display: flex;
+    justify-content: flex-end;
+
+}
 #next-button {
     background: #4CAF50; 
     color: #ffffff; 
@@ -149,14 +159,14 @@ header h1 {
     outline-offset: 2px; 
 }
 .correct {
-    background-color: #4CAF50; 
-    color: white; 
+    
+    color: #4CAF50; 
     font-size: 2em;
 }
 
 .incorrect {
-    background-color: #f44336; 
-    color: white; 
+
+    color: #f44336; 
     font-size: 2em;
 }
 
@@ -172,20 +182,10 @@ header h1 {
 /* Score display style */
 #score {
     margin-top: 20px;
-    font-size: 36px; 
+    font-size: 26px; 
     font-weight: 700;
-    color: #ffffff; 
-    text-align: center; 
-    background: linear-gradient(135deg, #ff6f61, #d84315); 
-    background-size: 200% 200%; 
-    background-position: center;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid #d84315;
-}
-#score:hover {
-    transform: scale(1.05); 
+    color: #0a0000; 
+   
 }
 
 
